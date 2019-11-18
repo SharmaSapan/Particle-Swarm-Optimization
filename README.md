@@ -3,6 +3,8 @@ Particle Swarm Optimization (PSO) is a population-based, stochastic optimization
 An implementation of swarm based Algorithm that tends to find the best position where it is most optimal in a function in accordance to n-dimensions (features).
 Particle movement premised on two simple behaviours: Move towards own (personal) best position. Move towards the best position in a neighbourhood.
 
+They achieve that by updating its position at every iteration using the velocity update, using constants of thier own cognitive search space and social search space.
+
 Applications of PSO:
 
     * Continuous optimization - e.g. Sphere function
