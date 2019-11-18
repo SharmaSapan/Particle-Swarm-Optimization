@@ -25,10 +25,10 @@ Different given parameters were used Experiment 1. ω = 0.729844, c1 = c2 = 1.49
 For each experiment 30 swarm particles, 500 iterations and 30 dimensions as a problem was used. In the calculations Inertia determines how much the particle will move after change in its velocity at each iteration. The cognitive value and social values are same for each experiment so that the same degree of personal best particle and neighbourhood best preference is given, and best ranks and performance as explained in class reaches. The boundary constraints are set in the program so that the particle best and global best are not considered if the particle is beyond +5.12 or -5.12. Particles are allowed to go outside that range but not allowed to update best positions. Random search calculates iterations according to the running PSO i.e. swarm size * pso iterations.
 Results Obtained:
 
-        	          | PSO-1	      |   PSO-2	   |   PSO-3     |     PSO-4	| Randomized Search|
-Average	:           |71.7060349   |	129.8438549|  431.9240568| 431.9240568|       331.720394 |
-Standard Deviation: |	11.48147883 | 8.787874943|  48.8626463 |	48.8626463|	      4.843294794|
-Median:	            |75.61707741	| 126.8979188|	446.1518272| 446.1518272|       332.4445966|
+|Results 	        | PSO-1	      |   PSO-2	   |   PSO-3     |     PSO-4	| Randomized Search|
+|Average            | 71.7060349  |	129.8438549|  431.9240568|   431.9240568|       331.720394 |
+|Standard Deviation | 11.48147883 | 8.787874943|  48.8626463 |	  48.8626463|       4.843294794|
+|Median|	        | 75.61707741 | 126.8979188|  446.1518272|   446.1518272|       332.4445966|
 
 ANALYSIS:
 
