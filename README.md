@@ -22,7 +22,9 @@ rFitness = rFitness + (10*currentPosition.length);
 
 Random search was also conducted to compare with the PSO performance. Multiple experiments were run using different seeds comparing parameters. Detailed results are in excel file in this folder.
 Different given parameters were used:
-|Experiment 1. ω = 0.729844, c1 = c2 = 1.496180 |Experiment 2. ω = 0.4, c1 = c2 = 1.2 | Experiment 3. ω = 1.0, c1 = c2 = 2.0 | Experiment 4. ω = −1.0, c1 = c2 = 2.0 | Experiment 5. Randomized search|
+|Experiment 1.| Experiment 2.| Experiment 3. | Experiment 4. |Experiment 5. |Randomized search|
+| --- | --- | --- | --- | --- |
+|ω = 0.729844, c1 = c2 = 1.496180 | ω = 0.4, c1 = c2 = 1.2 | ω = 1.0, c1 = c2 = 2.0 |  ω = −1.0, c1 = c2 = 2.0 |
 For each experiment 30 swarm particles, 500 iterations and 30 dimensions as a problem was used. In the calculations Inertia determines how much the particle will move after change in its velocity at each iteration. The cognitive value and social values are same for each experiment so that the same degree of personal best particle and neighbourhood best preference is given, and best ranks and performance as explained in class reaches. The boundary constraints are set in the program so that the particle best and global best are not considered if the particle is beyond +5.12 or -5.12. Particles are allowed to go outside that range but not allowed to update best positions. Random search calculates iterations according to the running PSO i.e. swarm size * pso iterations.
 Results Obtained:
 
