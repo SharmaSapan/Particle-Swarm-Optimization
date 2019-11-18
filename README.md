@@ -3,7 +3,7 @@ Particle Swarm Optimization (PSO) is a population-based, stochastic optimization
 An implementation of swarm based Algorithm that tends to find the best position where it is most optimal in a function in accordance to n-dimensions (features)
 Particle movement premised on two simple behaviours: Move towards own (personal) best position. Move towards the best position in a neighbourhood
 
-*Applications of PSO:
+Applications of PSO:
  *Continuous optimization - e.g. Sphere function
  *Discrete optimization - e.g. Travelling salesman problem
  *Multi-objective optimization - e.g. Vehicle routing problem
@@ -42,6 +42,7 @@ Results Obtained:
 ## ANALYSIS:
 
 The results show that the PSO highly depends upon the parameter configurations. The result can perform worse than the random search if not chosen properly. The experiment 1 performed best as they lead to convergence and perform well empirically as explained in class. This experiment has caused the particles to move to an optimal position and decreased its fitness drastically compared to random search in experiment 5. Best fitness conceived with experiment 1 is 56.715 and with random search was 325.98, hence PSO can perform more than 450% better than random search. The deviation received in these experiments were fairly low while some fitness was better some were not so. Random search gives the least deviation of 4.84 compared to 11.48 of PSO experiment 1.
+
 In the second PSO experiment the average rose by approximately 80% although standard deviation was not much affected but decreased. It probably is due to the fact that the inertia value is decreased to 0.4 which makes the particle movement less chaotic. 
 But when the inertia was made 1.0 and cognitive and social values at 2, PSO performed worst than the random search by about 30%.  It can be inferred that PSO can perform worse than 15000 iterations in random space if wrong values of parameters chosen. Experiment 3 and 4 performed same although they had different inertia value, being +1 and -1. This suggests that the negative inertia value will not change the results only the particles will move in opposite direction but no real effect in fitness calculation. The fitness obtained by experiment 3,4 and 5 were not too close to the optimal solution and the parameters are not recommended while optimizing. The social and cognitive values gave a high influence in finding the best position overall with increased inertia among particles, hence tempering the overall fitness. The standard deviation was very high compared to first two experiments also due to the same reason mentioned above.
 
