@@ -14,6 +14,7 @@ Particle movement premised on two simple behaviours: Move towards own (personal)
 
 Goal is to have the particle move towards the optimal point in the search space
 Vanilla Particle swarm optimization PSO is implemented in my java program. This algorithm tends to find the most fit position calculated using a fitness function. The PSO helps gain an edge as the particles achieve that by using their own cognition and also by what other particles in the search space has discovered. In this program, the effort was made to optimize the Rastrigin function and the fitness was calculated using: 
+code()
 for (int i = 0; i < currentPosition.length; i++) {
     // for summation using the Rastrigin's function fourmula
     rFitness += ((currentPosition[i]*currentPosition[i]) - (10*Math.cos(2*Math.PI*(currentPosition[i]))));
@@ -22,9 +23,11 @@ rFitness = rFitness + (10*currentPosition.length);
 
 Random search was also conducted to compare with the PSO performance. Multiple experiments were run using different seeds comparing parameters. Detailed results are in excel file in this folder.
 Different given parameters were used:
+
 |Experiment 1 | Experiment 2 | Experiment 3 | Experiment 4 | Randomized search |
 | --- | --- | --- | --- | --- |
-|ω = 0.729844, c1 = c2 = 1.496180 | ω = 0.4, c1 = c2 = 1.2 | ω = 1.0, c1 = c2 = 2.0 |  ω = −1.0, c1 = c2 = 2.0 | Swarm Size x Iterations |
+|ω = 0.729844, c1 = c2 = 1.496180 | ω = 0.4, c1 = c2 = 1.2 | ω = 1.0, c1 = c2 = 2.0 | ω = −1.0, c1 = c2 = 2.0 |Swarm Size x Iterations |
+
 For each experiment 30 swarm particles, 500 iterations and 30 dimensions as a problem was used. In the calculations Inertia determines how much the particle will move after change in its velocity at each iteration. The cognitive value and social values are same for each experiment so that the same degree of personal best particle and neighbourhood best preference is given, and best ranks and performance as explained in class reaches. The boundary constraints are set in the program so that the particle best and global best are not considered if the particle is beyond +5.12 or -5.12. Particles are allowed to go outside that range but not allowed to update best positions. Random search calculates iterations according to the running PSO i.e. swarm size * PSO iterations.
 Results Obtained:
 
