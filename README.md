@@ -1,16 +1,16 @@
 # Particle-Swarm-Optimization
-Particle Swarm Optimization (PSO) is a population-based, stochastic optimization technique
-An implementation of swarm based Algorithm that tends to find the best position where it is most optimal in a function in accordance to n-dimensions (features)
-Particle movement premised on two simple behaviours: Move towards own (personal) best position. Move towards the best position in a neighbourhood
+Particle Swarm Optimization (PSO) is a population-based, stochastic optimization technique.
+An implementation of swarm based Algorithm that tends to find the best position where it is most optimal in a function in accordance to n-dimensions (features).
+Particle movement premised on two simple behaviours: Move towards own (personal) best position. Move towards the best position in a neighbourhood.
 
 Applications of PSO:
- *Continuous optimization - e.g. Sphere function
- *Discrete optimization - e.g. Travelling salesman problem
- *Multi-objective optimization - e.g. Vehicle routing problem
- *Neural network training
- *Parameter selection for GA
- *Clustering
- *Scheduling
+    *Continuous optimization - e.g. Sphere function
+    *Discrete optimization - e.g. Travelling salesman problem
+    *Multi-objective optimization - e.g. Vehicle routing problem
+    *Neural network training
+    *Parameter selection for GA
+    *Clustering
+    *Scheduling
 
 Goal is to have the particle move towards the optimal point in the search space
 Vanilla Particle swarm optimization PSO is implemented in my java program. This algorithm tends to find the most fit position calculated using a fitness function. The PSO helps gain an edge as the particles achieve that by using their own cognition and also by what other particles in the search space has discovered. In this program, the effort was made to optimize the Rastrigin function and the fitness was calculated using: 
