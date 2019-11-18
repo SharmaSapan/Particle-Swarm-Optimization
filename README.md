@@ -26,9 +26,10 @@ For each experiment 30 swarm particles, 500 iterations and 30 dimensions as a pr
 Results Obtained:
 
 |Results 	        | PSO-1	      |   PSO-2	   |   PSO-3     |     PSO-4	| Randomized Search|
+| --- | --- | --- | --- | --- | --- |
 |Average            | 71.7060349  |	129.8438549|  431.9240568|   431.9240568|       331.720394 |
 |Standard Deviation | 11.48147883 | 8.787874943|  48.8626463 |	  48.8626463|       4.843294794|
-|Median|	        | 75.61707741 | 126.8979188|  446.1518272|   446.1518272|       332.4445966|
+|Median 	        | 75.61707741 | 126.8979188|  446.1518272|   446.1518272|       332.4445966|
 
 ANALYSIS:
 
