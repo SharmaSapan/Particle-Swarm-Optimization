@@ -16,12 +16,12 @@ Goal is to have the particle move towards the optimal point in the search space
 Vanilla Particle swarm optimization PSO is implemented in my java program. This algorithm tends to find the most fit position calculated using a fitness function. The PSO helps gain an edge as the particles achieve that by using their own cognition and also by what other particles in the search space has discovered. In this program, the effort was made to optimize the Rastrigin function and the fitness was calculated using: 
 
 ```java
-```
 for (int i = 0; i < currentPosition.length; i++) {
     // for summation using the Rastrigin's function fourmula
     rFitness += ((currentPosition[i]*currentPosition[i]) - (10*Math.cos(2*Math.PI*(currentPosition[i]))));
 }
 rFitness = rFitness + (10*currentPosition.length);
+```
 
 Random search was also conducted to compare with the PSO performance. Multiple experiments were run using different seeds comparing parameters. Detailed results are in excel file in this folder.
 Different given parameters were used:
