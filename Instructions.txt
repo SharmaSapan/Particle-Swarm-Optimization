@@ -2,4 +2,3 @@ Run the Swarm file as that has main function.
 Enter your parameters and rastrigin function will be evaluated using PSO and random search. Parameters are entered through console and output is also given in console
 For detailed output check files. Change file name to print to your directory.
 The files will print best fitness of each particle and swarm after each iteration the last value is the best one. The random best file will contain random search result
-Submission directory: /home/student/ss17hq/COSC3P71/Assign3
