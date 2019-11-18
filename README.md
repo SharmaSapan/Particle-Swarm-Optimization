@@ -4,6 +4,7 @@ An implementation of swarm based Algorithm that tends to find the best position 
 Particle movement premised on two simple behaviours: Move towards own (personal) best position. Move towards the best position in a neighbourhood.
 
 Applications of PSO:
+
     * Continuous optimization - e.g. Sphere function
     * Discrete optimization - e.g. Travelling salesman problem
     * Multi-objective optimization - e.g. Vehicle routing problem
@@ -47,8 +48,3 @@ In the second PSO experiment the average rose by approximately 80% although stan
 But when the inertia was made 1.0 and cognitive and social values at 2, PSO performed worst than the random search by about 30%.  It can be inferred that PSO can perform worse than 15000 iterations in random space if wrong values of parameters chosen. Experiment 3 and 4 performed same although they had different inertia value, being +1 and -1. This suggests that the negative inertia value will not change the results only the particles will move in opposite direction but no real effect in fitness calculation. The fitness obtained by experiment 3,4 and 5 were not too close to the optimal solution and the parameters are not recommended while optimizing. The social and cognitive values gave a high influence in finding the best position overall with increased inertia among particles, hence tempering the overall fitness. The standard deviation was very high compared to first two experiments also due to the same reason mentioned above.
 
 We can conclude that how important are the parameter configurations when finding optimal solution using Particle Swarm Optimization. Higher the Inertia, higher the effect of velocity update on the particles throwing them out the given range. Even the excessive cognitive and social dependence increase the fitness.
-
-* bullet list
-   * list2
-* bul
-
