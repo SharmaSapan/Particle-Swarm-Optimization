@@ -14,7 +14,9 @@ Particle movement premised on two simple behaviours: Move towards own (personal)
 
 Goal is to have the particle move towards the optimal point in the search space
 Vanilla Particle swarm optimization PSO is implemented in my java program. This algorithm tends to find the most fit position calculated using a fitness function. The PSO helps gain an edge as the particles achieve that by using their own cognition and also by what other particles in the search space has discovered. In this program, the effort was made to optimize the Rastrigin function and the fitness was calculated using: 
-code()
+
+```java
+```
 for (int i = 0; i < currentPosition.length; i++) {
     // for summation using the Rastrigin's function fourmula
     rFitness += ((currentPosition[i]*currentPosition[i]) - (10*Math.cos(2*Math.PI*(currentPosition[i]))));
@@ -42,4 +44,5 @@ Results Obtained:
 The results show that the PSO highly depends upon the parameter configurations. The result can perform worse than the random search if not chosen properly. The experiment 1 performed best as they lead to convergence and perform well empirically as explained in class. This experiment has caused the particles to move to an optimal position and decreased its fitness drastically compared to random search in experiment 5. Best fitness conceived with experiment 1 is 56.715 and with random search was 325.98, hence PSO can perform more than 450% better than random search. The deviation received in these experiments were fairly low while some fitness was better some were not so. Random search gives the least deviation of 4.84 compared to 11.48 of PSO experiment 1.
 In the second PSO experiment the average rose by approximately 80% although standard deviation was not much affected but decreased. It probably is due to the fact that the inertia value is decreased to 0.4 which makes the particle movement less chaotic. 
 But when the inertia was made 1.0 and cognitive and social values at 2, PSO performed worst than the random search by about 30%.  It can be inferred that PSO can perform worse than 15000 iterations in random space if wrong values of parameters chosen. Experiment 3 and 4 performed same although they had different inertia value, being +1 and -1. This suggests that the negative inertia value will not change the results only the particles will move in opposite direction but no real effect in fitness calculation. The fitness obtained by experiment 3,4 and 5 were not too close to the optimal solution and the parameters are not recommended while optimizing. The social and cognitive values gave a high influence in finding the best position overall with increased inertia among particles, hence tempering the overall fitness. The standard deviation was very high compared to first two experiments also due to the same reason mentioned above.
+
 We can conclude that how important are the parameter configurations when finding optimal solution using Particle Swarm Optimization. Higher the Inertia, higher the effect of velocity update on the particles throwing them out the given range. Even the excessive cognitive and social dependence increase the fitness.
